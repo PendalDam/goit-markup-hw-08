@@ -1,0 +1,152 @@
+/* Цвет заголовков и кнопок #212121 */
+/* Цвет основного текста #757575 */
+/* Черный #000000 */
+/* Основной фон и вторичный цвет текста #FFFFFF */
+/* Акцент #2196F3 */
+/* Цвет кнопки базовый #F5F4FA */
+/* Цвет мыла и тел в подвале rgba(255, 255, 255, 0.6) */
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Стили для index.html */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --primary-button-color: #f5f4fa;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+.logo {
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo-dark {
+  color: #000000;
+}
+.logo-light {
+  color: #ffffff;
+}
+.list {
+  list-style: none;
+}
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.list .link:hover,
+.list .link:focus {
+  color: var(--accent-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.section-title {
+  color: var(--title-text-color);
+}
+/* наша команда лішки не наслідували колір заголовка */
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits-list .title {
+  color: var(--title-text-color);
+}
+.hero-button {
+  border: 0;
+  cursor: pointer;
+  font-family: 'Roboto';
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+.button {
+  border: 0;
+  cursor: pointer;
+  font-family: 'Roboto';
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--primary-button-color);
+}
+.button.primary {
+  color: var(--title-text-color);
+  background-color: var(--primary-button-color);
+}
+.button.secondary {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+.link-exception {
+  font-family: 'Roboto';
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.link-exception:focus,
+.link-exception:hover {
+  color: var(--accent-color);
+}
+.footer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Стили для portfolio.html */
+.portfolio-title {
+  color: var(--title-text-color);
+}
