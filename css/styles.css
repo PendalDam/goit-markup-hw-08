@@ -164,7 +164,7 @@ body {
 }
 /* ------------buttons---------- */
 .button {
-  border: 0;
+  /* border: 0; */
   cursor: pointer;
   font-family: 'Roboto';
   font-weight: 500;
