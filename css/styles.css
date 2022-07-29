@@ -23,6 +23,8 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
 }
+/* --------header---------- */
+
 .logo {
   text-decoration: none;
   font-family: 'Raleway';
@@ -38,17 +40,21 @@ body {
 .logo-light {
   color: #ffffff;
 }
-.list {
+
+.site-nav,
+.site-cont {
   list-style: none;
 }
-.site-nav .link {
+.site-nav-link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.link {
+
+.site-cont-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -56,16 +62,20 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.site-nav .link.current {
+.site-nav-link.current {
   color: var(--accent-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-color);
 }
-.list .link:hover,
-.list .link:focus {
+.site-cont-link:hover,
+.site-cont-link:focus {
   color: var(--accent-color);
+}
+/* ------START-hero----------- */
+.hero {
+  background-color: #2f303a;
 }
 .hero-title {
   font-weight: 900;
@@ -75,78 +85,119 @@ body {
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
+.hero-button {
+  /* border: 0; */
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+/* ----------benefits------------ */
 .section-title {
   color: var(--title-text-color);
-}
-/* наша команда лішки не наслідували колір заголовка */
-.team-list .title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
-.title {
+.section-list {
+  list-style: none;
+  font-style: normal;
+  /* text-decoration: none; */
+}
+.section-subtitle {
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.benefits-list .title {
-  color: var(--title-text-color);
-}
-.hero-button {
-  border: 0;
-  cursor: pointer;
-  font-family: 'Roboto';
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-
-  letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
-}
-.button {
-  border: 0;
-  cursor: pointer;
-  font-family: 'Roboto';
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  background-color: var(--primary-button-color);
-}
-.button.primary {
-  color: var(--title-text-color);
-  background-color: var(--primary-button-color);
-}
-.button.secondary {
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
-}
-.link-exception {
-  font-family: 'Roboto';
-
+.section-text {
+  color: var(--primary-text-color);
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* -----------Team------------ */
+.section-team {
+  background-color: #f5f4fa;
+}
+.section-team-subtitle {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+/* ------------Footer------------ */
+.section-footer {
+  background-color: #2f303a;
+}
+.link-adress {
+  /* text-decoration: none; */
+  /* font-family: 'Roboto'; */
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.link-exception:focus,
-.link-exception:hover {
+.link-adress:focus,
+.link-adress:hover {
   color: var(--accent-color);
 }
-.footer .link {
+.footer-link {
+  /* text-decoration: none; */
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-/* Стили для portfolio.html */
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+/* ------------buttons---------- */
+.button {
+  border: 0;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.3em;
+  color: var(--title-text-color);
+  background-color: var(--primary-button-color);
+}
+.button:focus,
+.button:hover {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+/* ---Стили для портволио ---- */
+.filter-list {
+  list-style: none;
+}
+.portfolio-list {
+  list-style: none;
+}
 .portfolio-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
