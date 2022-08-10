@@ -172,8 +172,6 @@ nav {
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
-
-  /* background-color: #2f303a; */
   padding: 200px 0;
 }
 
@@ -191,7 +189,6 @@ nav {
 }
 
 .hero-button {
-  margin-top: 30px;
   cursor: pointer;
   font-family: 'Roboto';
   font-weight: 700;
@@ -203,8 +200,11 @@ nav {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  /* background: #2196f3; */
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
   border-radius: 4px;
 }
 
@@ -269,9 +269,6 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
-/* .benefits-cont-icon {
-} */
 
 /* what are we diong */
 .section-work {
@@ -354,8 +351,6 @@ nav {
 
 /* --Our clients-- */
 
-/* .section-clients {
-} */
 .section-list-clients {
   display: flex;
   justify-content: center;
@@ -401,6 +396,7 @@ nav {
 .section-footer .container {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .section-list-footer {
@@ -439,9 +435,6 @@ nav {
   color: var(--accent-color);
 }
 
-.invitation {
-  padding-top: 12px;
-}
 .invitation .team-soc {
   margin-top: 20px;
 }
@@ -474,11 +467,6 @@ nav {
   background-color: var(--accent-color);
 }
 
-/* .footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon {
-  fill: #ffffff;
-} */
-
 /* ------------buttons---------- */
 .button {
   cursor: pointer;
@@ -490,6 +478,11 @@ nav {
   color: var(--title-text-color);
   background-color: var(--primary-button-color);
   border-radius: 4px;
+  border: transparent;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
 }
 .button:focus,
 .button:hover {
@@ -548,10 +541,13 @@ nav {
   margin-top: 4px;
 }
 
-.portfolio-list > .item:hover,
-.portfolio-list > .item:focus {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+.portfolio-link {
+  text-decoration: none;
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
