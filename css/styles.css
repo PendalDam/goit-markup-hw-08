@@ -315,10 +315,13 @@ nav {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 27px;
+  /* padding: 27px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* -----------Team------------ */
 .section-team {
@@ -500,6 +503,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* color: #afb1b8; */
 }
 .footer-soc-icon {
@@ -530,7 +534,7 @@ nav {
   padding-left: 22px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:focus,
 .button:hover {
@@ -623,8 +627,8 @@ nav {
   overflow: auto;
 }
 
-.portfolio-link:hover .portfolio-up-text
-/* .portfolio-link:focus .portfolio-up-text  */ {
+.portfolio-link:hover .portfolio-up-text,
+.portfolio-link:focus .portfolio-up-text {
   transform: translatey(0%);
 }
 
