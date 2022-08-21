@@ -516,6 +516,19 @@ nav {
   background-color: var(--accent-color);
 }
 
+.mailing {
+}
+
+.mailing-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+}
+
 /* ------------buttons---------- */
 .button {
   cursor: pointer;
