@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-Домашка_6
+# goit-markup-hw-07
+Домашка_7
