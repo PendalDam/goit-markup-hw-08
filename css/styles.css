@@ -440,8 +440,13 @@ nav {
 }
 .section-footer .container {
   display: flex;
-  gap: 70px;
+  /* gap: 70px; */
   align-items: baseline;
+}
+
+.footer-cont {
+  margin-right: 70px;
+  flex-grow: 1;
 }
 
 .section-list-footer {
@@ -480,6 +485,10 @@ nav {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+.invitation {
+  margin-right: 93px;
 }
 
 .invitation .team-soc {
@@ -565,8 +574,6 @@ nav {
 .mailing-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
-  /* display: flex;
-  align-items: center; */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -575,8 +582,7 @@ nav {
   cursor: pointer;
   width: 200px;
   height: 50px;
-  left: 1185px;
-  top: 2784px;
+  align-items: center;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -793,13 +799,22 @@ nav {
   margin-bottom: 10px;
 }
 
+.input-textarea {
+  margin-bottom: 20px;
+}
+
+.input-checkbox {
+  margin-bottom: 30px;
+}
+
 .input-title {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
-  /* margin-bottom: 4px; */
+  margin-bottom: 4px;
 }
 
 .input-wrap {
@@ -862,7 +877,7 @@ nav {
   background-color: var(--accent-color);
   display: block;
   margin: 0 auto;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 
   padding-left: 52px;
   padding-right: 52px;
@@ -886,6 +901,7 @@ nav {
   /* margin-right: 5px; */
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .check-text span {
