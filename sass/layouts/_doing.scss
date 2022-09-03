@@ -1,20 +1,20 @@
-.section-work {
+.doing {
   padding-top: 0;
 }
 
-.what-are {
+.doing__list {
   justify-content: space-between;
   margin-top: 50px;
 }
-.what-are > item {
+.doing__list > item {
   flex-basis: calc(100% / 3 - 20px);
 }
 
-.what-are-wrap {
+.doing__wrap {
   position: relative;
 }
 
-.what-are-text {
+.doing__text {
   position: absolute;
   bottom: 0;
   right: 0;

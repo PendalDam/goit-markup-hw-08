@@ -24,35 +24,35 @@
   </head>
   <body>
     <!--header+navigation-->
-    <header class="section-header">
-      <div class="container header">
-        <nav>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
           <a href="./index.html" class="logo">Web<span class="logo-dark">Studio</span></a>
 
-          <ul class="site-nav">
-            <li class="site-nav-item">
-              <a href="./index.html" class="site-nav-link current">Студія</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link current">Студія</a>
             </li>
-            <li class="site-nav-item">
-              <a href="./portfolio.html" class="site-nav-link">Портфоліо</a>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
             </li>
-            <li class="site-nav-item"><a href="" class="site-nav-link">Контакти</a></li>
+            <li class="navigation__item"><a href="" class="navigation__link">Контакти</a></li>
           </ul>
         </nav>
 
-        <ul class="site-cont">
-          <li class="site-nav-item">
-            <a class="site-cont-link" href="mailto:info@devstudio.com">
-              <svg class="site-cont-icon" width="16" height="12">
+        <ul class="contacts">
+          <li class="navigation__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="navigation__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="site-nav-item">
-            <a class="site-cont-link" href="tel:+380961111111">
-              <svg class="site-cont-icon" width="10" height="16">
+          <li class="navigation__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="navigation__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -61,64 +61,65 @@
         </ul>
       </div>
     </header>
+
     <main>
       <!--Hero-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!--benefits-->
-      <section class="section">
+      <section class="benefits section">
         <div class="container">
           <!--h2 скрыть в финальной верстке-->
-          <h2 class="section-title visually-hidden">Наші переваги</h2>
+          <h2 class="title visually-hidden">Наші переваги</h2>
           <ul class="section-list">
-            <li class="benefits-item">
-              <div class="benefits-cont">
-                <svg class="benefits-cont-icon" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__wrap">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="section-text">
+              <h3 class="benefits__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
 
-            <li class="benefits-item">
-              <div class="benefits-cont">
-                <svg class="benefits-cont-icon" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__wrap">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="section-text">
+              <h3 class="benefits__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
 
-            <li class="benefits-item">
-              <div class="benefits-cont">
-                <svg class="benefits-cont-icon" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__wrap">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle">ПЛАНУВАННЯ</h3>
-              <p class="section-text">
+              <h3 class="benefits__subtitle">ПЛАНУВАННЯ</h3>
+              <p class="benefits__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
-            <li class="benefits-item">
-              <div class="benefits-cont">
-                <svg class="benefits-cont-icon" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__wrap">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="section-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="section-text">
+              <h3 class="benefits__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -126,28 +127,28 @@
         </div>
       </section>
       <!--section What are we doing-->
-      <section class="section section-work">
+      <section class="section doing">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="what-are section-list">
+          <h2 class="title">Чим ми займаємося</h2>
+          <ul class="doing__list section-list">
             <li class="item">
-              <div class="what-are-wrap">
+              <div class="doing__wrap">
                 <img src="./images/box_1.jpg" alt="Програмування" width="370" />
-                <p class="what-are-text">Десктопні додатки</p>
+                <p class="doing__text">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="item">
-              <div class="what-are-wrap">
+              <div class="doing__wrap">
                 <img src="./images/box_2.jpg" alt="Контроль" width="370" />
-                <p class="what-are-text">Мобільні додатки</p>
+                <p class="doing__text">Мобільні додатки</p>
               </div>
             </li>
 
             <li class="item">
-              <div class="what-are-wrap">
+              <div class="doing__wrap">
                 <img src="./images/box_3.jpg" alt="Дизайн" width="370" />
-                <p class="what-are-text">Дизайнерські рішення</p>
+                <p class="doing__text">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
@@ -156,7 +157,7 @@
       <!--section Our team-->
       <section class="section section-team">
         <div class="container">
-          <h2 class="section-title team">Наша команда</h2>
+          <h2 class="title team">Наша команда</h2>
           <ul class="section-list">
             <li class="section-list-item">
               <img src="./images/team_card_1.jpg" alt="Ігор" width="270" />
@@ -328,7 +329,7 @@
       <!-- Our clients -->
       <section class="section section-clients">
         <div class="container">
-          <h2 class="section-title">Постійні клієнти</h2>
+          <h2 class="title">Постійні клієнти</h2>
           <ul class="section-list section-list-clients">
             <li class="clients-list-item">
               <a href="" class="clients-list-link"
