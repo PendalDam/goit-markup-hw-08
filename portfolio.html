@@ -19,7 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--header+navigation-->
@@ -259,14 +260,13 @@
     <!--footer-->
     <footer class="section-footer">
       <div class="container">
-        <div class="">
+        <div class="footer-cont">
           <div class="footer-logo">
             <a href="./index.html" class="logo">Web<span class="logo-light">Studio</span></a>
           </div>
 
           <address>
             <ul class="section-list-footer">
-              <!-- поменять прозрачность цвета мыла и телефона! -->
               <li class="footer-item">
                 <a href="https://goo.gl/maps/dsPyRoySjwkU9vJh8" class="link-adress"
                   >м. Київ, пр-т Лесі Українки, 26</a
@@ -320,6 +320,21 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="mailing">
+          <h2 class="mailing-text">Підпишіться на розсилку</h2>
+          <form class="mailing-form">
+            <!-- <label for="user-email"></label> -->
+            <input type="email" name="email" class="mailing-input" placeholder="E-mail" />
+
+            <button type="submit" class="mailing-button">
+              <span>Підписатися</span>
+              <svg class="mailing-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
