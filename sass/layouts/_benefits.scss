@@ -6,7 +6,7 @@
   margin-right: 30px;
 }
 
-.title {
+.section__title {
   color: var(--title-text-color);
   text-align: center;
   font-weight: 700;
@@ -14,7 +14,7 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.section-list {
+.benefits {
   display: flex;
   list-style: none;
   justify-content: space-between;

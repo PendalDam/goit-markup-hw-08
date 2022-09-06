@@ -384,11 +384,11 @@ body {
   color: var(--accent-color);
 }
 
-.logo-dark {
+.logo__dark {
   color: #000000;
 }
 
-.logo-light {
+.logo__light {
   color: #ffffff;
 }
 
@@ -464,10 +464,10 @@ nav {
   color: var(--accent-color);
 }
 
-.current {
+.navigation__link--current {
   position: relative;
 }
-.current::after {
+.navigation__link--current::after {
   content: "";
   display: block;
   width: 100%;
@@ -541,7 +541,7 @@ nav {
   margin-right: 30px;
 }
 
-.title {
+.section__title {
   color: var(--title-text-color);
   text-align: center;
   font-weight: 700;
@@ -550,7 +550,7 @@ nav {
   letter-spacing: 0.03em;
 }
 
-.section-list {
+.benefits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -760,9 +760,7 @@ nav {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-list-link:hover .client-list-icon,
-.clients-list-link:focus .client-list-icon {
+.clients-list-link:hover .client-list-icon, .clients-list-link:focus .client-list-icon {
   fill: var(--accent-color);
 }
 
@@ -1126,9 +1124,7 @@ nav {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
-
-.portfolio-link:hover .portfolio-up-text,
-.portfolio-link:focus .portfolio-up-text {
+.portfolio-link:hover .portfolio-up-text, .portfolio-link:focus .portfolio-up-text {
   -webkit-transform: translatey(0%);
           transform: translatey(0%);
 }/*# sourceMappingURL=main.css.map */

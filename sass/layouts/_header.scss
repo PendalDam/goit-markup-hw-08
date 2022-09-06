@@ -16,10 +16,10 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.logo-dark {
+.logo__dark {
   color: #000000;
 }
-.logo-light {
+.logo__light {
   color: #ffffff;
 }
 nav {
@@ -81,7 +81,7 @@ nav {
   color: var(--accent-color);
 }
 
-.current {
+.navigation__link--current {
   position: relative;
   &::after {
     content: '';
